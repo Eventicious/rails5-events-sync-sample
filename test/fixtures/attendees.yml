@@ -1,0 +1,51 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  firstName: MyString
+  lastName: MyString
+  position: MyString
+  city: MyString
+  vk: MyString
+  twitter: MyString
+  facebook: MyString
+  email: MyString
+  showEmail: false
+  phone: MyString
+  showPhone: false
+  description: MyString
+  externalImagePath: MyString
+  externalThumbnailPath: MyString
+  isSpeaker: false
+  company: MyString
+  language: MyString
+  networkingCode: MyString
+  authorized: false
+  confirmed: false
+  moderated: false
+  withdrawed: false
+  privateInfo: MyString
+
+two:
+  firstName: MyString
+  lastName: MyString
+  position: MyString
+  city: MyString
+  vk: MyString
+  twitter: MyString
+  facebook: MyString
+  email: MyString
+  showEmail: false
+  phone: MyString
+  showPhone: false
+  description: MyString
+  externalImagePath: MyString
+  externalThumbnailPath: MyString
+  isSpeaker: false
+  company: MyString
+  language: MyString
+  networkingCode: MyString
+  authorized: false
+  confirmed: false
+  moderated: false
+  withdrawed: false
+  privateInfo: MyString

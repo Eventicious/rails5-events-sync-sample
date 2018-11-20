@@ -1,0 +1,132 @@
+<%= form_with(model: attendee, local: true) do |form| %>
+  <% if attendee.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(attendee.errors.count, "error") %> prohibited this attendee from being saved:</h2>
+
+      <ul>
+      <% attendee.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :firstName %>
+    <%= form.text_field :firstName %>
+  </div>
+
+  <div class="field">
+    <%= form.label :lastName %>
+    <%= form.text_field :lastName %>
+  </div>
+
+  <div class="field">
+    <%= form.label :position %>
+    <%= form.text_field :position %>
+  </div>
+
+  <div class="field">
+    <%= form.label :city %>
+    <%= form.text_field :city %>
+  </div>
+
+  <div class="field">
+    <%= form.label :vk %>
+    <%= form.text_field :vk %>
+  </div>
+
+  <div class="field">
+    <%= form.label :twitter %>
+    <%= form.text_field :twitter %>
+  </div>
+
+  <div class="field">
+    <%= form.label :facebook %>
+    <%= form.text_field :facebook %>
+  </div>
+
+  <div class="field">
+    <%= form.label :email %>
+    <%= form.text_field :email %>
+  </div>
+
+  <div class="field">
+    <%= form.label :showEmail %>
+    <%= form.check_box :showEmail %>
+  </div>
+
+  <div class="field">
+    <%= form.label :phone %>
+    <%= form.text_field :phone %>
+  </div>
+
+  <div class="field">
+    <%= form.label :showPhone %>
+    <%= form.check_box :showPhone %>
+  </div>
+
+  <div class="field">
+    <%= form.label :description %>
+    <%= form.text_field :description %>
+  </div>
+
+  <div class="field">
+    <%= form.label :externalImagePath %>
+    <%= form.text_field :externalImagePath %>
+  </div>
+
+  <div class="field">
+    <%= form.label :externalThumbnailPath %>
+    <%= form.text_field :externalThumbnailPath %>
+  </div>
+
+  <div class="field">
+    <%= form.label :isSpeaker %>
+    <%= form.check_box :isSpeaker %>
+  </div>
+
+  <div class="field">
+    <%= form.label :company %>
+    <%= form.text_field :company %>
+  </div>
+
+  <div class="field">
+    <%= form.label :language %>
+    <%= form.text_field :language %>
+  </div>
+
+  <div class="field">
+    <%= form.label :networkingCode %>
+    <%= form.text_field :networkingCode %>
+  </div>
+
+  <div class="field">
+    <%= form.label :authorized %>
+    <%= form.check_box :authorized %>
+  </div>
+
+  <div class="field">
+    <%= form.label :confirmed %>
+    <%= form.check_box :confirmed %>
+  </div>
+
+  <div class="field">
+    <%= form.label :moderated %>
+    <%= form.check_box :moderated %>
+  </div>
+
+  <div class="field">
+    <%= form.label :withdrawed %>
+    <%= form.check_box :withdrawed %>
+  </div>
+
+  <div class="field">
+    <%= form.label :privateInfo %>
+    <%= form.text_field :privateInfo %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

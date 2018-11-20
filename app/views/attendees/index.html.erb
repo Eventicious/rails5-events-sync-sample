@@ -1,0 +1,71 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Attendees</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Firstname</th>
+      <th>Lastname</th>
+      <th>Position</th>
+      <th>City</th>
+      <th>Vk</th>
+      <th>Twitter</th>
+      <th>Facebook</th>
+      <th>Email</th>
+      <th>Showemail</th>
+      <th>Phone</th>
+      <th>Showphone</th>
+      <th>Description</th>
+      <th>Externalimagepath</th>
+      <th>Externalthumbnailpath</th>
+      <th>Isspeaker</th>
+      <th>Company</th>
+      <th>Language</th>
+      <th>Networkingcode</th>
+      <th>Authorized</th>
+      <th>Confirmed</th>
+      <th>Moderated</th>
+      <th>Withdrawed</th>
+      <th>Privateinfo</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @attendees.each do |attendee| %>
+      <tr>
+        <td><%= attendee.firstName %></td>
+        <td><%= attendee.lastName %></td>
+        <td><%= attendee.position %></td>
+        <td><%= attendee.city %></td>
+        <td><%= attendee.vk %></td>
+        <td><%= attendee.twitter %></td>
+        <td><%= attendee.facebook %></td>
+        <td><%= attendee.email %></td>
+        <td><%= attendee.showEmail %></td>
+        <td><%= attendee.phone %></td>
+        <td><%= attendee.showPhone %></td>
+        <td><%= attendee.description %></td>
+        <td><%= attendee.externalImagePath %></td>
+        <td><%= attendee.externalThumbnailPath %></td>
+        <td><%= attendee.isSpeaker %></td>
+        <td><%= attendee.company %></td>
+        <td><%= attendee.language %></td>
+        <td><%= attendee.networkingCode %></td>
+        <td><%= attendee.authorized %></td>
+        <td><%= attendee.confirmed %></td>
+        <td><%= attendee.moderated %></td>
+        <td><%= attendee.withdrawed %></td>
+        <td><%= attendee.privateInfo %></td>
+        <td><%= link_to 'Show', attendee %></td>
+        <td><%= link_to 'Edit', edit_attendee_path(attendee) %></td>
+        <td><%= link_to 'Destroy', attendee, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Attendee', new_attendee_path %>
