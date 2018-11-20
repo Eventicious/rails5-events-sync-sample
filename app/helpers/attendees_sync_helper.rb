@@ -1,0 +1,2 @@
+module AttendeesSyncHelper
+end
