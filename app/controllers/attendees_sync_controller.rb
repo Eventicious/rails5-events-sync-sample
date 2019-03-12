@@ -17,7 +17,7 @@ class AttendeesSyncController < ApplicationController
 		render json: nil
 	end
 	private
-	def convertedParams
+	def convertedParams #or your mapper
 		attendeeFields = [:firstName, :lastName, :position, :city, :vk, :twitter, :facebook, :email, :showEmail, :phone, :showPhone, :description, :externalImagePath, :externalThumbnailPath, :isSpeaker, :company, :language, :networkingCode, :authorized, :confirmed, :moderated, :withdrawed, :privateInfo]
 		attendeeHash = {}
 		attendeeFields.each {|field|
